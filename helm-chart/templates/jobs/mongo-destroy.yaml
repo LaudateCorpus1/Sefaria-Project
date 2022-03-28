@@ -34,7 +34,7 @@ spec:
       volumes:
       - name: script
         configMap:
-          name: mongo-destroy-{{ .Values.deployEnv }}
+          name: destroy-mongo-{{ .Values.deployEnv }}
           defaultMode: 0755
   ttlSecondsAfterFinished: 432000
 {{- end }}
